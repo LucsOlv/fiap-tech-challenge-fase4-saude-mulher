@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+venv/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (datasets are large and shouldn't be in git)
+data/raw/
+data/processed/
+*.mp4
+*.avi
+*.wav
+*.mp3
+!data/samples/
+
+# Models (large binary files)
+models/*.pt
+models/*.pth
+models/*.onnx
+!models/.gitkeep
+
+# Notebooks output
+notebooks/.ipynb_checkpoints/
+
+# Azure
+azure_config.json
+!azure_config.example.json
