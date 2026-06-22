@@ -73,4 +73,54 @@ Sistema multimodal de inteligência artificial para monitoramento contínuo da s
 ## 🔗 Links
 
 - [Tech Challenge - Fase 4 (PDF)](./docs/8IADT%20-%20Fase%204%20-%20Tech%20challenge%20Secretaria.pdf)
+- [Relatório Técnico](./docs/relatorio-tecnico.md)
 - [Issues do Projeto](https://github.com/LucsOlv/fiap-tech-challenge-fase4-saude-mulher/issues)
+- [PRs do Projeto](https://github.com/LucsOlv/fiap-tech-challenge-fase4-saude-mulher/pulls)
+
+## 🚀 Instalação Rápida
+
+```bash
+git clone https://github.com/LucsOlv/fiap-tech-challenge-fase4-saude-mulher.git
+cd fiap-tech-challenge-fase4-saude-mulher
+bash setup.sh
+source venv/bin/activate
+```
+
+### Executar testes
+```bash
+pytest tests/ -v          # 121 testes
+pytest --cov=src tests/   # Com cobertura
+```
+
+### Executar Dashboard
+```bash
+streamlit run src/dashboard/app.py
+```
+
+### Configurar Azure
+Copie `.env.example` para `.env` e preencha suas credenciais Azure.
+
+## 📊 Status do Projeto
+
+| Métrica | Valor |
+|---------|-------|
+| **Módulos** | 7 (video, audio, text, fusion, azure, security, dashboard) |
+| **Arquivos de código** | 40 |
+| **Testes** | 121 (100% passando) |
+| **Issues criadas** | 17 |
+| **PRs merged** | 2 |
+| **Cobertura** | Testes unitários + integração |
+
+## 🛡️ Stack Tecnológica
+
+| Categoria | Tecnologia |
+|-----------|-----------|
+| **Linguagem** | Python 3.10+ |
+| **Deep Learning** | PyTorch, Ultralytics YOLOv8, Transformers |
+| **Áudio** | Librosa, Whisper, SoundFile |
+| **NLP** | spaCy, scikit-learn |
+| **Cloud** | Azure Cognitive Services |
+| **Dashboard** | Streamlit, Plotly |
+| **Segurança** | Cryptography (AES), TLS 1.3 |
+| **Testes** | Pytest |
+| **LGPD** | Anonimização, criptografia, auditoria |
