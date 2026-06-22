@@ -8,19 +8,29 @@
 
 Sistema multimodal de inteligência artificial para monitoramento contínuo da saúde da mulher, integrando análise de vídeo, áudio e texto para detecção precoce de riscos. O sistema utiliza modelos de deep learning (YOLOv8), processamento de linguagem natural e Azure Cognitive Services para apoiar decisões clínicas em tempo real.
 
-## 🎯 Objetivos
+## 🎯 Escopo Definido (Issue #1)
 
-- Detectar precocemente riscos em saúde materna e ginecológica
-- Identificar sinais de violência doméstica ou abuso
-- Monitorar bem-estar psicológico feminino
-- Utilizar serviços em nuvem (Azure) para processamento especializado
-- Aplicar técnicas de detecção de anomalias em tempo real
+### Funcionalidades escolhidas (4 de 4):
+- [x] Analisar vídeos de partos, cirurgias ginecológicas, fisioterapia pós-parto e consultas
+- [x] Processar gravações de voz de pacientes (depressão pós-parto, ansiedade, violência doméstica)
+- [x] Detectar anomalias em sinais vitais (pressão arterial, batimentos fetais, prescrições)
+- [x] Integrar com Azure Cognitive Services (Speech, Video Indexer, Computer Vision, OpenAI)
+
+### Objetivos escolhidos (5 de 5):
+- [x] Detectar precocemente riscos em saúde materna e ginecológica
+- [x] Identificar sinais de violência doméstica ou abuso
+- [x] Monitorar bem-estar psicológico feminino
+- [x] Utilizar serviços em nuvem (Azure) para processamento especializado
+- [x] Aplicar técnicas de detecção de anomalias em tempo real
+
+### Alvo do YOLOv8:
+- [x] **Sangramento anômalo durante procedimentos** — detecção visual de hemorragia em vídeos cirúrgicos
 
 ## 🧩 Funcionalidades Principais
 
 ### Análise de Vídeo (YOLOv8)
-- Detecção de instrumentos cirúrgicos ginecológicos e áreas críticas
-- Análise de sangramento anômalo em procedimentos
+- Detecção de sangramento anômalo em procedimentos cirúrgicos ginecológicos
+- Análise de áreas críticas (útero, ovários, mamas)
 - Identificação de sinais não-verbais de desconforto ou medo
 - Triagem de linguagem corporal indicativa de abuso
 
@@ -31,7 +41,7 @@ Sistema multimodal de inteligência artificial para monitoramento contínuo da s
 - Hesitação e tom de voz na comunicação de sintomas
 
 ### Integração Azure
-- Azure Cognitive Services (Speech-to-Text, Video Indexer, Computer Vision)
+- Azure Cognitive Services (Speech-to-Text, Video Indexer, Computer Vision, OpenAI)
 - Processamento escalável em nuvem
 - Padrões elevados de privacidade e segurança (LGPD)
 
