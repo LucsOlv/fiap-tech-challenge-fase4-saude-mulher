@@ -40,3 +40,13 @@ notebooks/.ipynb_checkpoints/
 # Azure
 azure_config.json
 !azure_config.example.json
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform.lock.hcl
+terraform/terraform.tfvars
+!terraform/terraform.tfvars.example
+*.tfvars
+!*.tfvars.example

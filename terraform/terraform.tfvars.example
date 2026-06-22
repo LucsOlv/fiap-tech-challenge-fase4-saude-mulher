@@ -1,0 +1,16 @@
+# ═══════════════════════════════════════════════════════════
+# terraform.tfvars.example
+# Copie para terraform.tfvars e ajuste
+# ═══════════════════════════════════════════════════════════
+
+location = "brazilsouth"
+
+# F0 = gratuito (sem SLA, ideal pra dev), S0 = standard (pago)
+cognitive_sku = "F0"       # Speech + Vision no tier gratuito
+
+openai_sku    = "S0"       # OpenAI não tem tier gratuito
+openai_model  = "gpt-4o-mini"  # Modelo mais barato pra testar
+openai_model_version = "2024-07-18"
+
+environment   = "dev"
+project_name  = "fiap-saude-mulher"
